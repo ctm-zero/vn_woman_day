@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thiệp Chúc Mừng 20/10</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card-container">
+    <div class="card" id="card">
+      <div class="left-door"><span class="outer-text">💐 Chúc Mừng Ngày 20/10 💐</span></div>
+      <div class="right-door"><span class="outer-text">Gửi đến Mẹ yêu dấu 💕</span></div>
+
+      <!-- Hoa góc từ thư mục images/ -->
+      <img src="images/flower1.png" alt="Hoa góc trái trên" class="corner top-left">
+      <img src="images/flower2.png" alt="Hoa góc phải trên" class="corner top-right">
+      <img src="images/flower3.png" alt="Hoa góc trái dưới" class="corner bottom-left">
+      <img src="images/flower4.png" alt="Hoa góc phải dưới" class="corner bottom-right">
+
+      <div class="message">
+        <h2>20/10 - Ngày Phụ Nữ Việt Nam</h2>
+        <p>
+          Nhân ngày Phụ nữ Việt Nam 20/10,<br>
+          3 bố con gửi đến Mẹ ngàn lời yêu thương nhất.<br><br>
+          Cảm ơn Mẹ đã luôn quan tâm, chăm sóc và yêu thương cả nhà.<br><br>
+          Chúc Mẹ luôn khỏe mạnh, luôn nở nụ cười tươi,<br>
+          và mãi là điểm tựa bình yên nhất của gia đình mình. 💖<br><br>
+          — From 3 bố con múp míp with love 😘😘😘 —
+        </p>
+      </div>
+    </div>
+
+    <button id="openBtn">Mở thiệp 💌</button>
+  </div>
+
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_1dc438b5f8.mp3?filename=romantic-piano-10995.mp3"
+            type="audio/mpeg">
+  </audio>
+
+  <script>
+    document.getElementById("openBtn").addEventListener("click", () => {
+      document.getElementById("card").classList.toggle("open");
+    });
+  </script>
+</body>
+</html>
